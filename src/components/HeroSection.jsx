@@ -1,5 +1,7 @@
 import heroImage from "../assets/1.png";
 import heroVideo from "../assets/2.mp4";
+import sectionImage from "../assets/3.png";
+import latestImage from "../assets/4.png";
 
 const HeroSection = () => {
   return (
@@ -113,6 +115,145 @@ const HeroSection = () => {
                     Total property sell
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- Section 3 (intro + image + sell/buy) --- */}
+      <section className="bg-[#f3f1ee]">
+        <div className="mx-auto max-w-[1280px] px-6 py-20 lg:px-14">
+          {/* Top centered paragraph */}
+          <p className="mx-auto max-w-[820px] text-center text-[18px] leading-[1.8] text-black/80 sm:text-[20px]">
+            Discover stunning residential buildings and modern apartments designed
+            for every lifestyle — whether you're buying, renting, or investing.
+          </p>
+
+          {/* Bottom layout */}
+          <div className="mt-16 grid items-center gap-12 lg:grid-cols-[1fr_420px]">
+            {/* Image + badge */}
+            <div className="relative">
+              <div className="overflow-hidden bg-neutral-200">
+                <img
+                  src={sectionImage}
+                  alt="Property"
+                  className="h-[280px] w-full object-cover sm:h-[330px]"
+                />
+              </div>
+
+              {/* Orange badge */}
+              <div className="absolute -bottom-10 left-0 w-[160px] bg-[#ff5a1f] px-6 py-7 text-white">
+                <div className="text-[28px] font-light leading-none">25 Years</div>
+                <div className="mt-2 text-[11px] uppercase tracking-[0.14em] text-white/85">
+                  Of successful
+                </div>
+                <div className="mt-1 text-[11px] uppercase tracking-[0.14em] text-white/85">
+                  experience in trading
+                </div>
+              </div>
+            </div>
+
+            {/* Right: tag + Sell/Buy */}
+            <div className="pt-12 lg:pt-0">
+              <span className="inline-block bg-[#ff5a1f] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.15em] text-white">
+                + Explore Properties
+              </span>
+
+              <div className="mt-10 grid gap-10 sm:grid-cols-2">
+                <div>
+                  <h3 className="text-[18px] font-medium text-black">Sell</h3>
+                  <p className="mt-3 text-[13px] leading-[1.8] text-black/65">
+                    Speedily say has suitable disposal add boy.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-[18px] font-medium text-black">Buy</h3>
+                  <p className="mt-3 text-[13px] leading-[1.8] text-black/65">
+                    Passage its ten led removal. Preference any astonished.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- Section 4 (Latest Properties) --- */}
+      <section className="bg-[#f3f1ee]">
+        <div className="mx-auto max-w-[1280px] px-6 py-24 lg:px-14">
+          {/* Top row */}
+          <div className="grid gap-10 lg:grid-cols-[360px_1fr_auto] lg:items-start">
+            <h2 className="text-[56px] font-medium leading-[1.02] tracking-[-0.02em] text-black sm:text-[64px]">
+              Latest
+              <br />
+              Properties
+            </h2>
+
+            <div className="pt-3">
+              <ul className="space-y-4 text-[14px] text-black/80">
+                <li className="flex items-center gap-2">
+                  <span className="inline-block h-1 w-1 rounded-full bg-[#ff5a1f]" />
+                  <span>Haig</span>
+                </li>
+                <li>Myrtle Pool House</li>
+                <li>Clifton</li>
+                <li>Sidney house</li>
+                <li>Sweetman</li>
+              </ul>
+            </div>
+
+            <div className="lg:pt-2">
+              <a
+                href="#"
+                className="inline-block bg-[#ff5a1f] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.15em] text-white"
+              >
+                + Explore All Projects
+              </a>
+            </div>
+          </div>
+
+          {/* Main content: image + details */}
+          <div className="mt-16 grid gap-12 lg:grid-cols-[1fr_360px] lg:items-stretch">
+            <div className="overflow-hidden bg-neutral-200">
+              <img
+                src={latestImage}
+                alt="Latest property"
+                className="h-[360px] w-full object-cover sm:h-[420px]"
+              />
+            </div>
+
+            <div className="flex flex-col justify-between">
+              <div>
+                <div className="text-[12px] tracking-[0.18em] text-black/70">2024</div>
+                <h3 className="mt-6 text-[44px] font-medium leading-none text-black">
+                  Haig
+                </h3>
+
+                <p className="mt-6 text-[13px] leading-[1.8] text-black/65">
+                  Van buren st quincy,
+                  <br />
+                  illinois(il), 62301
+                </p>
+
+                <div className="mt-10 flex items-center gap-8 text-[12px] text-black/70">
+                  <span>925 Sq.ft</span>
+                  <span className="h-4 w-px bg-black/15" />
+                  <span>3 Bath</span>
+                  <span className="h-4 w-px bg-black/15" />
+                  <span>2 Bed</span>
+                </div>
+              </div>
+
+              <div className="mt-16">
+                <div className="text-[18px] font-semibold text-black">$24,458 USD</div>
+                <a
+                  href="#"
+                  className="mt-6 inline-block bg-[#ff5a1f] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.15em] text-white"
+                >
+                  + Explore Project
+                </a>
               </div>
             </div>
           </div>
