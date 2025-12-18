@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Optional tiny global defaults (Tailwind handles most of it) */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
