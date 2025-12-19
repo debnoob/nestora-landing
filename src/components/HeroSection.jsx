@@ -6,7 +6,7 @@ import sectionImage from "../assets/3.png";
 import latestImage from "../assets/4.png";
 import dubaiImage from "../assets/5.png";
 import losAngelesImage from "../assets/6.png";
-import northJutlandImage from "../assets/7.png";
+const northJutlandImage = new URL('../assets/7.png', import.meta.url).href;
 import girlVideo from "../assets/girl.mp4";
 import manImage from "../assets/man.jpg";
 import happyCoupleVideo from "../assets/happy_couple.mp4";
@@ -39,16 +39,16 @@ const HeroSection = () => {
 
             {/* Right: image + CTA */}
             <div className="w-full max-w-[360px] lg:max-w-[420px]">
-              <div className="relative overflow-hidden bg-neutral-200">
+              <div className="relative bg-neutral-200">
                 <img
                   src={heroImage}
                   alt="Interior"
-                  className="h-[260px] w-full object-cover sm:h-[300px]"
+                  className="h-[500px] w-full object-cover lg:h-[600px]"
                 />
 
                 <a
                   href="#"
-                  className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-[#ff5a1f] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.15em] text-white"
+                  className="absolute bottom-0 right-0 bg-[#ff5a1f] px-6 py-3 text-[11px] font-medium uppercase tracking-[0.15em] text-white"
                 >
                   + Explore Properties
                 </a>
@@ -137,54 +137,58 @@ const HeroSection = () => {
 
       {/* --- Section 3 (intro + image + sell/buy) --- */}
       <section className="bg-[#f3f1ee]">
-        <div className="mx-auto max-w-[1280px] px-6 py-20 lg:px-14">
+        <div className="mx-auto max-w-[1280px] px-6 py-24 lg:px-14">
           {/* Top centered paragraph */}
-          <p className="mx-auto max-w-[820px] text-center text-[18px] leading-[1.8] text-black/80 sm:text-[20px]">
-            Discover stunning residential buildings and modern apartments designed
-            for every lifestyle — whether you're buying, renting, or investing.
+          <p className="mx-auto max-w-[900px] text-center text-[24px] font-light leading-[1.5] text-[#111] sm:text-[28px]">
+            Discover stunning residential buildings and modern apartments designed for every lifestyle — whether you're buying, renting, or investing.
           </p>
 
           {/* Bottom layout */}
-          <div className="mt-16 grid items-center gap-12 lg:grid-cols-[1fr_420px]">
+          <div className="mt-24 grid items-center gap-16 lg:grid-cols-[1.2fr_0.8fr]">
             {/* Image + badge */}
             <div className="relative">
-              <div className="overflow-hidden bg-neutral-200">
+              <div className="relative z-0 ml-10 mb-10">
                 <img
                   src={sectionImage}
                   alt="Property"
-                  className="h-[280px] w-full object-cover sm:h-[330px]"
+                  className="h-[400px] w-full object-cover sm:h-[500px]"
                 />
               </div>
 
               {/* Orange badge */}
-              <div className="absolute -bottom-10 left-0 w-[160px] bg-[#ff5a1f] px-6 py-7 text-white">
-                <div className="text-[28px] font-light leading-none">25 Years</div>
-                <div className="mt-2 text-[11px] uppercase tracking-[0.14em] text-white/85">
+              <div className="absolute bottom-0 left-0 z-10 flex h-[220px] w-[220px] flex-col justify-center bg-[#ff5a1f] px-8 text-white shadow-lg">
+                <div className="absolute right-5 top-5 text-xl">+</div>
+                <div className="text-[48px] font-light leading-none">25 Years</div>
+                <div className="mt-4 text-[13px] font-medium leading-tight text-white/90">
                   Of successful
-                </div>
-                <div className="mt-1 text-[11px] uppercase tracking-[0.14em] text-white/85">
+                  <br />
                   experience in trading
                 </div>
               </div>
             </div>
 
             {/* Right: tag + Sell/Buy */}
-            <div className="pt-12 lg:pt-0">
-              <span className="inline-block bg-[#ff5a1f] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.15em] text-white">
+            <div className="pl-4">
+              <a
+                href="#"
+                className="inline-block bg-[#ff5a1f] px-6 py-3 text-[11px] font-bold uppercase tracking-[0.15em] text-white"
+              >
                 + Explore Properties
-              </span>
+              </a>
 
-              <div className="mt-10 grid gap-10 sm:grid-cols-2">
+              <div className="mt-14 grid gap-12 sm:grid-cols-2">
                 <div>
-                  <h3 className="text-[18px] font-medium text-black">Sell</h3>
-                  <p className="mt-3 text-[13px] leading-[1.8] text-black/65">
+                  <h3 className="text-[22px] font-medium text-[#111]">Sell</h3>
+                  <p className="mt-5 text-[15px] leading-[1.7] text-[#555]">
                     Speedily say has suitable disposal add boy.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="text-[18px] font-medium text-black">Buy</h3>
-                  <p className="mt-3 text-[13px] leading-[1.8] text-black/65">
+                  <div className="border-b border-black/10 pb-4">
+                    <h3 className="text-[22px] font-medium text-[#111]">Buy</h3>
+                  </div>
+                  <p className="mt-5 text-[15px] leading-[1.7] text-[#555]">
                     Passage its ten led removal. Preference any astonished.
                   </p>
                 </div>
@@ -428,21 +432,12 @@ const HeroSection = () => {
                     </div>
 
                     <div className="absolute bottom-0 left-0 w-full bg-[#ff5a1f] px-8 py-6 text-white">
-                      <div className="text-[13px] font-medium">Larry Lawson, Agent at Squire</div>
+                      <div className="text-[13px] font-bold">Larry Lawson, Agent at Squire</div>
                       <div className="mt-2 text-[13px] tracking-[0.12em]">★★★★★</div>
                     </div>
                   </div>
 
-                  {/* Middle: text only */}
-                  <div className="h-[240px] px-8 py-10 text-[13px] leading-[1.9] text-black/70 lg:h-[340px]">
-                    Supposing so be resolving breakfast am or perfectly. It drew a hill
-                    from me. Valley by oh twenty direct me so. Departure defective
-                    arranging rapturous did believe him all had supported. Family months
-                    lasted simple set nature vulgar him. Picture for attempt joy excited
-                    ten carried manners talking how.
-                  </div>
-
-                  {/* Right: video (in screenshot this is a still frame, but we use your mp4) */}
+                  {/* Middle: video (Girl) */}
                   <div className="h-[240px] lg:h-[340px]">
                     <video
                       className="h-full w-full object-cover"
@@ -452,6 +447,24 @@ const HeroSection = () => {
                       loop
                       playsInline
                     />
+                  </div>
+
+                  {/* Right: text with top orange header (Jenny Wilson) */}
+                  <div className="relative h-[240px] lg:h-[340px]">
+                    <div className="absolute left-0 top-0 w-full bg-[#ff5a1f] px-8 py-6 text-white">
+                      <div className="text-[13px] font-medium">
+                        Jenny Wilson, Architect at PlantLab
+                      </div>
+                      <div className="mt-2 text-[13px] tracking-[0.12em]">★★★★★</div>
+                    </div>
+
+                    <div className="h-full px-8 pb-10 pt-24 text-[13px] leading-[1.9] text-black/70">
+                      Supposing so be resolving breakfast am or perfectly. It drew a hill
+                      from me. Valley by oh twenty direct me so. Departure defective
+                      arranging rapturous did believe him all had supported. Family months
+                      lasted simple set nature vulgar him. Picture for attempt joy excited
+                      ten carried manners talking how.
+                    </div>
                   </div>
                 </div>
               </div>
@@ -480,19 +493,19 @@ const HeroSection = () => {
       {/* --- Section 8 (Stay informed / video background) --- */}
       <section className="bg-[#f3f1ee]">
         <div className="mx-auto max-w-[1280px] px-6 py-20 lg:px-14">
-          <div className="relative overflow-hidden">
-            {/* Background video */}
-            <video
-              className="absolute inset-0 h-full w-full object-cover"
-              src={happyCoupleVideo}
-              autoPlay
-              muted
-              loop
-              playsInline
-            />
-
-            {/* Dark overlay */}
-            <div className="absolute inset-0 bg-black/35" />
+          <div className="relative">
+            {/* Background video wrapper */}
+            <div className="absolute inset-0 overflow-hidden">
+              <video
+                className="h-full w-full object-cover"
+                src={happyCoupleVideo}
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+              <div className="absolute inset-0 bg-black/35" />
+            </div>
 
             {/* Content */}
             <div className="relative z-10 grid gap-10 p-10 lg:grid-cols-[1fr_260px] lg:p-14">
@@ -506,11 +519,11 @@ const HeroSection = () => {
                   your budget.
                 </h3>
 
-                <p className="mt-6 text-[12px] text-white/75">
+                <p className="mt-6 text-[12px] text-white">
                   Subscribe to be the first to know about my new listings!
                 </p>
 
-                <div className="mt-10 grid max-w-[320px] gap-6 text-[12px] text-white/80">
+                <div className="mt-10 grid max-w-[320px] gap-6 text-[12px] text-white">
                   <label className="grid gap-2">
                     <span>Email</span>
                     <input
@@ -539,23 +552,24 @@ const HeroSection = () => {
               </div>
 
               {/* Right: orange 25 years card */}
-              <div className="flex lg:justify-end">
-                <div className="w-full max-w-[240px] bg-[#ff5a1f] p-6 text-white">
-                  <div className="text-right text-white/90">+</div>
-                  <div className="mt-4 text-[26px] font-light leading-none">25 Years</div>
-                  <div className="mt-3 text-[11px] uppercase tracking-[0.14em] text-white/85">
+              <div className="flex-col lg:justify-end items-end">
+                <div className="relative -mt-24 w-xs max-w-[240px] bg-[#ff5a1f] px-5 py-2 text-white shadow-xl">
+                  <div className="absolute right-4 top-4 text-white/90">+</div>
+                  <div className="mt-22 text-[26px] font-light leading-none">25 Years</div>
+                  <div className="mt-3 text-[10px] uppercase tracking-[0.14em] text-white/85">
                     of successful
                   </div>
-                  <div className="mt-1 text-[11px] uppercase tracking-[0.14em] text-white/85">
+                  <div className="mt-1 text-[10px] uppercase tracking-[0.14em] text-white/85">
                     experience in trading
                   </div>
 
-                  <div className="mt-8 flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.12em] text-white/90">
-                    <span>I want to</span>
-                    <span className="bg-black/15 px-2 py-1">+ Buy</span>
-                    <span className="bg-black/15 px-2 py-1">+ Sell</span>
-                  </div>
+                  
                 </div>
+                <div className="mt-7 flex items-center gap-2 text-[9px] font-bold uppercase tracking-[0.12em] text-white">
+                    <span className="font-medium text-white/80">I want to</span>
+                    <button className="bg-black/20 px-2 py-1.5 hover:bg-black/30">+ BUY</button>
+                    <button className="bg-black/20 px-2 py-1.5 hover:bg-black/30">+ SELL</button>
+                  </div>
               </div>
             </div>
           </div>
@@ -565,8 +579,8 @@ const HeroSection = () => {
       {/* --- Section 9 (Let’s Move...) --- */}
       <section className="bg-[#f3f1ee]">
         <div className="mx-auto max-w-[1280px] px-6 py-24 lg:px-14">
-          <div className="grid gap-12 lg:grid-cols-[520px_80px_1fr] lg:items-start">
-            <h2 className="text-[48px] font-medium leading-[1.05] tracking-[-0.02em] text-black sm:text-[56px]">
+          <div className="grid gap-12 lg:grid-cols-[520px_80px_1fr] lg:items-start ">
+            <h2 className="text-[48px] font-normal leading-[1.05] tracking-[-0.02em] text-black sm:text-[56px] -mt-6">
               Let’s Move
               <br />
               Something Great
@@ -574,7 +588,7 @@ const HeroSection = () => {
               Together
             </h2>
 
-            <div className="hidden text-center text-[40px] font-light text-black/80 lg:block">
+            <div className="hidden text-center text-[40px] font-light text-black/95 lg:block mt-9 mr-30">
               +
             </div>
 
@@ -583,8 +597,8 @@ const HeroSection = () => {
                 + Get Started Today
               </span>
 
-              <p className="mt-6 text-[13px] leading-[1.9] text-black/65">
-                Find your next home or connect with buyers who are already searching.
+              <p className="mt-6 text-[15px] leading-[1.9] text-black/95">
+                Find your next home or connect with buyers who are already searching.<br />
                 Whether you’re moving in or moving on, we’re here to make it
                 effortless.
               </p>
