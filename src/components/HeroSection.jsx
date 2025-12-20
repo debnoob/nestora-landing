@@ -10,6 +10,7 @@ const northJutlandImage = new URL('../assets/7.png', import.meta.url).href;
 import girlVideo from "../assets/girl.mp4";
 import manImage from "../assets/man.jpg";
 import happyCoupleVideo from "../assets/happy_couple.mp4";
+import LatestPropertiesList from "./LatestPropertiesList";
 
 const HeroSection = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -139,8 +140,8 @@ const HeroSection = () => {
       <section className="bg-[#f3f1ee]">
         <div className="mx-auto max-w-[1280px] px-6 py-24 lg:px-14">
           {/* Top centered paragraph */}
-          <p className="mx-auto max-w-[900px] text-center text-[24px] font-light leading-[1.5] text-[#111] sm:text-[28px]">
-            Discover stunning residential buildings and modern apartments designed for every lifestyle — whether you're buying, renting, or investing.
+          <p className="ml-10 max-w-[900px] text-left text-[24px] font-normal tracking-tight text-[#111] sm:text-[28px]">
+            Discover stunning residential buildings and modern<br /> apartments designed for every lifestyle — whether <br/>you're buying, renting, or investing.
           </p>
 
           {/* Bottom layout */}
@@ -178,7 +179,9 @@ const HeroSection = () => {
 
               <div className="mt-14 grid gap-12 sm:grid-cols-2">
                 <div>
+                <div className="border-b border-black/10 pb-4">
                   <h3 className="text-[22px] font-medium text-[#111]">Sell</h3>
+                  </div>
                   <p className="mt-5 text-[15px] leading-[1.7] text-[#555]">
                     Speedily say has suitable disposal add boy.
                   </p>
@@ -202,30 +205,21 @@ const HeroSection = () => {
       <section className="bg-[#f3f1ee]">
         <div className="mx-auto max-w-[1280px] px-6 py-24 lg:px-14">
           {/* Top row */}
-          <div className="grid gap-10 lg:grid-cols-[360px_1fr_auto] lg:items-start">
-            <h2 className="text-[56px] font-medium leading-[1.02] tracking-[-0.02em] text-black sm:text-[64px]">
+          <div className="grid gap-10 lg:grid-cols-[360px_1fr_1fr] lg:items-start flex-col lg:justify-start items-start">
+            <h2 className="mt-8 tracking-tight text-[#111] text-[56px] font-normal leading-[1.02] tracking-[-0.02em] text-black sm:text-[64px]">
               Latest
               <br />
               Properties
             </h2>
 
-            <div className="pt-3">
-              <ul className="space-y-4 text-[14px] text-black/80">
-                <li className="flex items-center gap-2">
-                  <span className="inline-block h-1 w-1 rounded-full bg-[#ff5a1f]" />
-                  <span>Haig</span>
-                </li>
-                <li>Myrtle Pool House</li>
-                <li>Clifton</li>
-                <li>Sidney house</li>
-                <li>Sweetman</li>
-              </ul>
+            <div className="pt-3 ml-5">
+              <LatestPropertiesList />
             </div>
 
             <div className="lg:pt-2">
               <a
                 href="#"
-                className="inline-block bg-[#ff5a1f] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.15em] text-white"
+                className="ml-10 inline-block bg-[#ff5a1f] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.15em] text-white"
               >
                 + Explore All Projects
               </a>
@@ -234,7 +228,7 @@ const HeroSection = () => {
 
           {/* Main content: image + details */}
           <div className="mt-16 grid gap-12 lg:grid-cols-[1fr_360px] lg:items-stretch">
-            <div className="overflow-hidden bg-neutral-200">
+            <div className="overflow-hidden bg-neutral-200 -ml-38" >
               <img
                 src={latestImage}
                 alt="Latest property"
@@ -244,8 +238,8 @@ const HeroSection = () => {
 
             <div className="flex flex-col justify-between">
               <div>
-                <div className="text-[12px] tracking-[0.18em] text-black/70">2024</div>
-                <h3 className="mt-6 text-[44px] font-medium leading-none text-black">
+                <div className="-mt-2 text-[12px] font-bold tracking-[0.18em] text-black/120">2024</div>
+                <h3 className="mt-11 text-[44px] font-normal leading-none text-black">
                   Haig
                 </h3>
 
@@ -265,7 +259,7 @@ const HeroSection = () => {
               </div>
 
               <div className="mt-16">
-                <div className="text-[18px] font-semibold text-black">$24,458 USD</div>
+                <div className="-mt-4 text-[18px] font-semibold text-black">$24,458 USD</div>
                 <a
                   href="#"
                   className="mt-6 inline-block bg-[#ff5a1f] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.15em] text-white"
@@ -277,16 +271,15 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
-
       {/* --- Section 5 (Mapped with Purpose...) --- */}
       <section className="bg-[#f3f1ee]">
         <div className="mx-auto max-w-[1280px] px-6 py-24 lg:px-14">
           <div className="flex justify-center">
-            <h2 className="text-center text-[48px] font-medium leading-[1.02] tracking-[-0.02em] text-black sm:text-[56px]">
+            <h2 className="flex flex-col items-center justify-center text-left text-[48px] font-normal leading-[1.02] tracking-[-0.02em] text-black sm:text-[56px]">
               Mapped with
               <br />
               Purpose, Built with
-              <br />
+              <br  />
               Heart
             </h2>
           </div>
@@ -575,6 +568,7 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
+
 
       {/* --- Section 9 (Let’s Move...) --- */}
       <section className="bg-[#f3f1ee]">
