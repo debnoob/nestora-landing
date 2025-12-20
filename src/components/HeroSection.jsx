@@ -21,12 +21,12 @@ const HeroSection = () => {
   return (
     <>
       {/* --- Section 1 (top intro) --- */}
-      <section className="bg-[#f3f1ee]">
+      <section className="bg-[#f3f1ee] relative" >
         <div className="mx-auto max-w-[1280px] px-6 py-16 lg:px-14">
-          <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
+          <div className="lg:min-h-[650px] flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
             {/* Left: headline + arrow */}
             <div className="flex-1">
-              <h1 className="text-[52px] font-medium leading-[1.02] tracking-[-0.02em] text-[#111] sm:text-[64px] lg:text-[72px]">
+              <h1 className="mt-29 -ml-35 text-[52px] font-normal leading-[1.02] tracking-[-0.02em] text-[#111] sm:text-[64px] lg:text-[72px]">
                 Discover Premium
                 <br />
                 Residences in Landmark
@@ -34,11 +34,11 @@ const HeroSection = () => {
                 Homes
               </h1>
 
-              <div className="mt-16 text-2xl font-light text-black/60">↓</div>
+              <div className="-ml-35 mt-47 text-2xl font-medium text-black/100">↓</div>
             </div>
 
             {/* Right: image + CTA */}
-            <div className="w-full max-w-[360px] lg:max-w-[420px]">
+            <div className=" lg:absolute lg:top-0 lg:right-35  w-full max-w-[360px] lg:max-w-[420px]">
               <div className="relative bg-neutral-200">
                 <img
                   src={heroImage}
@@ -48,7 +48,7 @@ const HeroSection = () => {
 
                 <a
                   href="#"
-                  className="absolute bottom-0 right-0 bg-[#ff5a1f] px-6 py-3 text-[11px] font-medium uppercase tracking-[0.15em] text-white"
+                  className="absolute -bottom-4 left-30 bg-[#ff5a1f] px-6 py-3 text-[11px] font-medium uppercase tracking-[0.15em] text-white"
                 >
                   + Explore Properties
                 </a>
@@ -612,19 +612,19 @@ const HeroSection = () => {
         <div className="mx-auto max-w-[1280px] px-6 py-16 lg:px-14">
           <div className="grid gap-14 lg:grid-cols-[420px_1fr]">
             {/* Left: links + info */}
-            <div className="text-white/85">
-              <div className="grid gap-3 text-[11px] font-medium uppercase tracking-[0.16em]">
+            <div className="grid grid-cols-2 text-white/85">
+              <div className="grid gap-5 text-[11px] font-medium uppercase tracking-[0.16em]">
                 <a href="#" className="w-fit hover:text-white">Properties</a>
                 <a href="#" className="w-fit hover:text-white">Studio</a>
                 <a href="#" className="w-fit hover:text-white">Process</a>
                 <a href="#" className="w-fit hover:text-white">+ Add Property</a>
               </div>
 
-              <div className="mt-10 text-[12px] leading-[1.9] text-white/85">
+              <div className="grid gap-5 text-[12px] leading-[1.9] text-white/85">
                 <div className="text-[11px] font-medium uppercase tracking-[0.16em]">(info)</div>
-                <div className="mt-3">P: +44 (445) 578 996</div>
-                <div>E: example@gmail.com</div>
-                <div>A: 101 Days Rd, Grange QLD 4051</div>
+                <div ><span className="text-white font-bold">P:</span> +44 (445) 578 996</div>
+                <div><span className="text-white font-bold">E:</span> example@gmail.com</div>
+                <div><span className="text-white font-bold ">A:</span> 101 Days Rd, Grange QLD 4051</div>
               </div>
 
               <div className="mt-10 text-[12px] text-white/85">
@@ -634,32 +634,32 @@ const HeroSection = () => {
 
             {/* Right: big message + email row */}
             <div className="text-white">
-              <h3 className="text-[46px] font-light leading-[1.05] tracking-[-0.02em] sm:text-[56px]">
+              <h3 className="text-[46px] font-light leading-[1.05] tracking-[-0.02em] sm:text-[85px]">
                 Built for Buyers.
                 <br />
                 Sent to You.
               </h3>
 
-              <p className="mt-6 max-w-[520px] text-[13px] leading-[1.9] text-white/85">
-                Meant bills it up doubt small purse. Required his you put the outlived
+              <p className="mt-6 max-w-[520px] text-[15px] leading-[1.9] text-white/80">
+                Meant bills it up doubt small purse. Required his you put<br /> the outlived
                 answered position.
               </p>
 
-              <div className="mt-10 flex max-w-[520px] items-center justify-between border-b border-white/35 pb-3 text-[12px] text-white/85">
+              <div className="mt-10 flex max-w-[620px] items-center justify-between border-b border-white/35 pb-3 text-[12px] text-white/85">
                 <span>example@gmail.com</span>
-                <span className="text-[18px]">→</span>
+                <span className="text-[25px]">→</span>
               </div>
             </div>
           </div>
 
           {/* Bottom brand row */}
-          <div className="mt-16 grid items-end gap-8 lg:grid-cols-[1fr_auto_1fr]">
-            <div className="text-[64px] font-semibold leading-none tracking-[-0.02em] text-white sm:text-[84px]">
+          <div className="mt-16 grid items-end gap-8 lg:grid-cols-[auto_auto_1fr]">
+            <div className="-ml-22 text-[64px] font-semibold leading-none tracking-[-0.02em] text-white sm:text-[84px]">
               NESTORA
               <span className="align-top text-[22px] font-medium">+</span>
             </div>
 
-            <div className="text-center text-[12px] tracking-[0.18em] text-white/85">
+            <div className="ml-40 mb-9 text-center text-[12px] tracking-[0.18em] text-white/90">
               1997
             </div>
 
