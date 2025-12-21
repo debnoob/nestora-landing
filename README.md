@@ -13,7 +13,6 @@ Nestora is a modern real estate platform designed to simplify the process of fin
 
 ## 🛠️ Tech Stack
 - **Framework**: [React](https://reactjs.org/)
-- **Build Tool**: [Vite](https://vitejs.dev/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 
 
