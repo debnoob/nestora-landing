@@ -1,16 +1,48 @@
-# React + Vite
+# Nestora Landing Page - Appsrow Demo Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Nestora Landing Page** project! This repository contains a landing page built as part of a demo task for **Appsrow**.
 
-Currently, two official plugins are available:
+## 🚀 Project Overview
+Nestora is a modern real estate platform designed to simplify the process of finding and managing properties. This landing page showcases the core features and design aesthetic of the Nestora brand.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Key Features
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop views.
+- **Modern UI/UX**: Built with React and styled with Tailwind CSS for a sleek, professional look.
+- **Dynamic Content**: Interactive elements to engage users.
+- **Fast Performance**: Developed using Vite for lightning-fast development and build times.
 
-## React Compiler
+## 🛠️ Tech Stack
+- **Framework**: [React](https://reactjs.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🏁 Getting Started
 
-## Expanding the ESLint configuration
+To run this project locally, follow these steps:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/debnoob/nestora-landing.git
+   ```
+
+2. **Navigate to the project directory**:
+   ```bash
+   cd nestora-landing
+   ```
+
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+## 🌐 Live Demo
+You can view the live demo of this project here: [nestora-landing.vercel.app](https://nestora-landing.vercel.app/)
+
+---
+Developed with ❤️ by [debnoob](https://github.com/debnoob) for the Appsrow Demo Task.
