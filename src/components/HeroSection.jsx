@@ -169,7 +169,7 @@ const HeroSection = () => {
             </div>
 
             {/* Right: tag + Sell/Buy */}
-            <div className="pl-4">
+            <div className="pl-4 mt-62">
               <a
                 href="#"
                 className="inline-block bg-[#ff5a1f] px-6 py-3 text-[11px] font-bold uppercase tracking-[0.15em] text-white"
@@ -180,7 +180,7 @@ const HeroSection = () => {
               <div className="mt-14 grid gap-12 sm:grid-cols-2">
                 <div>
                 <div className="border-b border-black/10 pb-4">
-                  <h3 className="text-[22px] font-medium text-[#111]">Sell</h3>
+                  <h3 className="text-[22px] font-normal text-[#111]">Sell</h3>
                   </div>
                   <p className="mt-5 text-[15px] leading-[1.7] text-[#555]">
                     Speedily say has suitable disposal add boy.
@@ -189,7 +189,7 @@ const HeroSection = () => {
 
                 <div>
                   <div className="border-b border-black/10 pb-4">
-                    <h3 className="text-[22px] font-medium text-[#111]">Buy</h3>
+                    <h3 className="text-[22px] font-normal text-[#111]">Buy</h3>
                   </div>
                   <p className="mt-5 text-[15px] leading-[1.7] text-[#555]">
                     Passage its ten led removal. Preference any astonished.
@@ -219,7 +219,7 @@ const HeroSection = () => {
             <div className="lg:pt-2">
               <a
                 href="#"
-                className="ml-10 inline-block bg-[#ff5a1f] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.15em] text-white"
+                className="ml-50 whitespace-nowrap inline-block bg-[#ff5a1f] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.15em] text-white"
               >
                 + Explore All Projects
               </a>
@@ -243,17 +243,17 @@ const HeroSection = () => {
                   Haig
                 </h3>
 
-                <p className="mt-6 text-[13px] leading-[1.8] text-black/65">
+                <p className="mt-6 text-[13px] leading-[1.8] text-black/120">
                   Van buren st quincy,
                   <br />
                   illinois(il), 62301
                 </p>
 
-                <div className="mt-10 flex items-center gap-8 text-[12px] text-black/70">
+                <div className="mt-10 flex items-center gap-8 text-[12px] text-black/120">
                   <span>925 Sq.ft</span>
-                  <span className="h-4 w-px bg-black/15" />
+                  <span className="h-4 w-px bg-black/120" />
                   <span>3 Bath</span>
-                  <span className="h-4 w-px bg-black/15" />
+                  <span className="h-4 w-px bg-black/120" />
                   <span>2 Bed</span>
                 </div>
               </div>
@@ -284,7 +284,7 @@ const HeroSection = () => {
             </h2>
           </div>
 
-          <div className="mt-14 grid gap-8 lg:grid-cols-3">
+          <div className="mt-14 grid gap-2 -mx-6 lg:-mx-42 lg:grid-cols-3">
             {/* Dubai */}
             <div className="relative overflow-hidden bg-neutral-200">
               <img
@@ -293,33 +293,40 @@ const HeroSection = () => {
                 className="h-[320px] w-full object-cover sm:h-[360px]"
               />
               <div className="absolute inset-0 bg-black/20" />
-              <div className="absolute left-8 top-6 text-white/90">+</div>
-              <div className="absolute bottom-12 left-8 text-[28px] font-light tracking-[-0.02em] text-white">
+              <div className="absolute right-3 top-1 text-white/90">+</div>
+              <div className="absolute bottom-46 left-32 text-[28px] font-light tracking-[-0.02em] text-white">
                 Dubai
               </div>
             </div>
-
             {/* Los Angeles */}
-            <div className="relative overflow-hidden bg-neutral-200">
-              <img
-                src={losAngelesImage}
-                alt="Los Angeles"
-                className="h-[320px] w-full object-cover sm:h-[360px]"
-              />
-              <div className="absolute inset-0 bg-black/20" />
-              <div className="absolute right-8 top-6 text-white/90">+</div>
+           <div className="relative overflow-hidden bg-neutral-200">
+  <img
+    src={losAngelesImage}
+    alt="Los Angeles"
+    className="h-[320px] w-full object-cover sm:h-[360px]"
+  />
+  <div className="absolute inset-0 bg-black/20" />
+  <div className="absolute right-3 top-1 text-white/90">+</div>
 
-              <div className="absolute bottom-[92px] left-8 text-[28px] font-light tracking-[-0.02em] text-white">
-                Los Angeles
-              </div>
+  {/* NEW WRAPPER: Centers everything at the bottom */}
+  {/* bottom-16 places the whole group 64px from the floor */}
+  <div className="absolute bottom-35 left-0 w-full flex flex-col items-center gap-3">
+    
+    {/* Text: Removed 'absolute' and position coordinates */}
+    <div className="text-[28px] font-light tracking-[-0.02em] text-white">
+      Los Angeles
+    </div>
 
-              <span className="absolute bottom-[64px] left-8 bg-[#ff5a1f] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.15em] text-white">
-                + Explore Project
-              </span>
+    {/* Button: Removed 'absolute' and position coordinates */}
+    <span className="bg-[#ff5a1f] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.15em] text-white">
+      + Explore Project
+    </span>
+    
+  </div>
 
-              <div className="absolute bottom-10 right-10 bg-[#ff5a1f] px-6 py-6 text-white">
+              <div className="absolute bottom-10 right-10 bg-[#ff5a1f] px-4 py-2 text-white">
                 <div className="text-right text-white/90">+</div>
-                <div className="mt-2 text-[11px] font-medium uppercase tracking-[0.15em]">
+                <div className="mt-1 text-[11px] font-medium uppercase tracking-[0.15em]">
                   Drag
                 </div>
               </div>
@@ -333,8 +340,8 @@ const HeroSection = () => {
                 className="h-[320px] w-full object-cover sm:h-[360px]"
               />
               <div className="absolute inset-0 bg-black/20" />
-              <div className="absolute right-8 top-6 text-white/90">+</div>
-              <div className="absolute bottom-12 left-8 text-[28px] font-light tracking-[-0.02em] text-white">
+              <div className="absolute right-3 top-1 text-white/90">+</div>
+              <div className="absolute bottom-46 left-32 text-[28px] font-light tracking-[-0.02em] text-white">
                 North Jutland
               </div>
             </div>
@@ -366,11 +373,11 @@ const HeroSection = () => {
           </div>
 
           {/* Slides track */}
-          <div className="overflow-hidden">
-            <div
-              className="flex transition-transform duration-500 ease-out"
-              style={{ transform: `translateX(-${activeSlide * 100}%)` }}
-            >
+       <div className="overflow-hidden -mx-6 lg:-mx-38">
+  <div
+    className="flex transition-transform duration-500 ease-out"
+    style={{ transform: `translateX(-${activeSlide * 100}%)` }}
+  >
               {/* Slide 1 (matches slide1.jpg layout) */}
               <div className="w-full shrink-0">
                 <div className="grid overflow-hidden bg-white lg:grid-cols-3">
@@ -411,65 +418,49 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              {/* Slide 2 (matches provided screenshot) */}
-              <div className="w-full shrink-0">
-                <div className="grid overflow-hidden bg-white lg:grid-cols-3">
-                  {/* Left: text with bottom orange name bar */}
-                  <div className="relative h-[240px] lg:h-[340px]">
-                    <div className="h-full p-10 pb-28 text-[13px] leading-[1.9] text-black/70">
-                      Fulfilled direction use continual set him propriety continued. Saw
-                      met applauded favorite deficient engrossed concealed and her.
-                      Concluded boy perpetual old supposing. Farther related bed and
-                      passage comfort civilly. Dash woods see frankness objection abilities
-                      hire alteration it favorable appearance up.
-                    </div>
+        {/* Slide 2 (matches provided screenshot) */}
+        <div className="w-full shrink-0">
+          <div className="grid overflow-hidden bg-white lg:grid-cols-3">
+            {/* Left: Video */}
+            <div className="h-60 lg:h-85">
+              <video
+                className="h-full w-full object-cover"
+                src={girlVideo}
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+            </div>
 
-                    <div className="absolute bottom-0 left-0 w-full bg-[#ff5a1f] px-8 py-6 text-white">
-                      <div className="text-[13px] font-bold">Larry Lawson, Agent at Squire</div>
-                      <div className="mt-2 text-[13px] tracking-[0.12em]">★★★★★</div>
-                    </div>
-                  </div>
-
-                  {/* Middle: video (Girl) */}
-                  <div className="h-[240px] lg:h-[340px]">
-                    <video
-                      className="h-full w-full object-cover"
-                      src={girlVideo}
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                    />
-                  </div>
-
-                  {/* Right: text with top orange header (Jenny Wilson) */}
-                  <div className="relative h-[240px] lg:h-[340px]">
-                    <div className="absolute left-0 top-0 w-full bg-[#ff5a1f] px-8 py-6 text-white">
-                      <div className="text-[13px] font-medium">
-                        Jenny Wilson, Architect at PlantLab
-                      </div>
-                      <div className="mt-2 text-[13px] tracking-[0.12em]">★★★★★</div>
-                    </div>
-
-                    <div className="h-full px-8 pb-10 pt-24 text-[13px] leading-[1.9] text-black/70">
-                      Supposing so be resolving breakfast am or perfectly. It drew a hill
-                      from me. Valley by oh twenty direct me so. Departure defective
-                      arranging rapturous did believe him all had supported. Family months
-                      lasted simple set nature vulgar him. Picture for attempt joy excited
-                      ten carried manners talking how.
-                    </div>
-                  </div>
-                </div>
+            {/* Center: Text with orange label */}
+            <div className="relative h-60 lg:h-85 border-x border-black/5">
+              <div className="absolute bottom-0 left-0 w-full bg-[#ff5a1f] px-8 py-6 text-white">
+                <div className="text-[13px] font-bold">Larry Lawson, Agent at Squire</div>
+                <div className="mt-2 text-[13px] tracking-[0.12em]">★★★★★</div>
               </div>
+              <div className="h-full p-10 pb-28 text-[13px] leading-[1.9] text-black/70">
+                Concluded boy perpetual old supposing. Farther related bed and
+                passage comfort civilly. Dash woods see frankness objection abilities
+                hire alteration it favorable appearance up.
+              </div>
+            </div>
+
+            {/* Right: THE MISSING IMAGE - Now correctly placed */}
+            <div className="h-60 lg:h-85">
+              <img src={manImage} alt="Agent" className="h-full w-full object-cover" />
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* --- Section 7 (Partners row) --- */}
       <section className="bg-[#f3f1ee]">
         <div className="mx-auto max-w-[1280px] px-6 py-16 lg:px-14">
-          <div className="text-center text-[12px] tracking-[0.18em] text-black/60">
+          <div className="text-center text-[12px] tracking-[0.18em] text-black/100">
             Empowering Growth Through Strong Partnerships
           </div>
 
@@ -486,7 +477,7 @@ const HeroSection = () => {
       {/* --- Section 8 (Stay informed / video background) --- */}
       <section className="bg-[#f3f1ee]">
         <div className="mx-auto max-w-[1280px] px-6 py-20 lg:px-14">
-          <div className="relative">
+          <div className="relative -mx-6 lg:-mx-45">
             {/* Background video wrapper */}
             <div className="absolute inset-0 overflow-hidden">
               <video
@@ -560,8 +551,8 @@ const HeroSection = () => {
                 </div>
                 <div className="mt-7 flex items-center gap-2 text-[9px] font-bold uppercase tracking-[0.12em] text-white">
                     <span className="font-medium text-white/80">I want to</span>
-                    <button className="bg-black/20 px-2 py-1.5 hover:bg-black/30">+ BUY</button>
-                    <button className="bg-black/20 px-2 py-1.5 hover:bg-black/30">+ SELL</button>
+                    <button className="bg-[#ff5a1f] px-2 py-1.5 hover:bg-black/30">+ BUY</button>
+                    <button className="bg-[#ff5a1f] px-2 py-1.5 hover:bg-black/30">+ SELL</button>
                   </div>
               </div>
             </div>
@@ -591,7 +582,7 @@ const HeroSection = () => {
                 + Get Started Today
               </span>
 
-              <p className="mt-6 text-[15px] leading-[1.9] text-black/95">
+              <p className="font-normal mt-6 text-[15px] leading-[1.9] text-black/110">
                 Find your next home or connect with buyers who are already searching.<br />
                 Whether you’re moving in or moving on, we’re here to make it
                 effortless.
