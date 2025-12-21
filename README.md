@@ -15,7 +15,7 @@ Nestora is a modern real estate platform designed to simplify the process of fin
 - **Framework**: [React](https://reactjs.org/)
 - **Build Tool**: [Vite](https://vitejs.dev/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Icons**: [Lucide React](https://lucide.dev/)
+
 
 ## 🏁 Getting Started
 
@@ -44,5 +44,4 @@ To run this project locally, follow these steps:
 ## 🌐 Live Demo
 You can view the live demo of this project here: [nestora-landing.vercel.app](https://nestora-landing.vercel.app/)
 
----
-Developed with ❤️ by [debnoob](https://github.com/debnoob) for the Appsrow Demo Task.
+
