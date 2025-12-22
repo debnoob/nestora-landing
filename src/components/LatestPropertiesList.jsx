@@ -10,8 +10,7 @@ const properties = [
 ];
 
 const LatestPropertiesList = () => {
-  // This state now lives SAFELY inside this small box.
-  // It won't interfere with your slider or other parts of the main page.
+  
   const [activeItem, setActiveItem] = useState("Haig");
 
   return (
@@ -23,14 +22,13 @@ const LatestPropertiesList = () => {
             onMouseEnter={() => setActiveItem(name)}
             className="flex items-center gap-2 cursor-pointer transition-all duration-200"
           >
-            {/* The Dot: Switches color based on state */}
-            <span
+                <span
               className={`inline-block h-1.5 w-1.5 rounded-full transition-colors duration-300 ${
                 activeItem === name ? "bg-[#ff5a1f]" : "bg-transparent"
               }`}
             />
             
-            {/* The Text: Switches color/opacity */}
+            
             <span className={activeItem === name ? "text-black font-medium" : "text-black/60"}>
               {name}
             </span>
