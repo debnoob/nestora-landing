@@ -21,7 +21,7 @@ const HeroSection = () => {
 
   return (
     <>
-      {/* --- Section 1 (top intro) --- */}
+      {/* Section 1 (top intro)  */}
       <section className="bg-[#f3f1ee] relative" >
         <div className="mx-auto max-w-[1280px] px-6 py-16 lg:px-14">
           <div className="lg:min-h-[650px] flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
@@ -59,7 +59,7 @@ const HeroSection = () => {
         </div>
       </section>
 
-      {/* --- Section 2 (video hero) --- */}
+      {/* Section 2 (video hero) */}
       <section className="relative">
         {/* Background video */}
         <video
@@ -136,7 +136,7 @@ const HeroSection = () => {
         </div>
       </section>
 
-      {/* --- Section 3 (intro + image + sell/buy) --- */}
+      {/*  Section 3 (intro + image + sell/buy)  */}
       <section className="bg-[#f3f1ee]">
         <div className="mx-auto max-w-[1280px] px-6 py-24 lg:px-14">
           {/* Top centered paragraph */}
@@ -201,7 +201,7 @@ const HeroSection = () => {
         </div>
       </section>
 
-      {/* --- Section 4 (Latest Properties) --- */}
+      {/* Section 4 (Latest Properties) */}
       <section className="bg-[#f3f1ee]">
         <div className="mx-auto max-w-[1280px] px-6 py-24 lg:px-14">
           {/* Top row */}
@@ -271,7 +271,7 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
-      {/* --- Section 5 (Mapped with Purpose...) --- */}
+      {/*  Section 5 (Mapped with Purpose */}
       <section className="bg-[#f3f1ee]">
         <div className="mx-auto max-w-[1280px] px-6 py-24 lg:px-14">
           <div className="flex justify-center">
@@ -308,16 +308,13 @@ const HeroSection = () => {
   <div className="absolute inset-0 bg-black/20" />
   <div className="absolute right-3 top-1 text-white/90">+</div>
 
-  {/* NEW WRAPPER: Centers everything at the bottom */}
-  {/* bottom-16 places the whole group 64px from the floor */}
+  
   <div className="absolute bottom-35 left-0 w-full flex flex-col items-center gap-3">
     
-    {/* Text: Removed 'absolute' and position coordinates */}
     <div className="text-[28px] font-light tracking-[-0.02em] text-white">
       Los Angeles
     </div>
 
-    {/* Button: Removed 'absolute' and position coordinates */}
     <span className="bg-[#ff5a1f] px-4 py-2 text-[11px] font-medium uppercase tracking-[0.15em] text-white">
       + Explore Project
     </span>
@@ -349,7 +346,7 @@ const HeroSection = () => {
         </div>
       </section>
 
-      {/* --- Section 6 (Sliding cards) --- */}
+      {/* Section 6 - Sliding cards */}
       <section className="bg-[#f3f1ee]">
         <div className="mx-auto max-w-[1280px] px-6 pb-24 lg:px-14">
           {/* Slider controls (kept simple for beginner style) */}
@@ -378,8 +375,7 @@ const HeroSection = () => {
     className="flex transition-transform duration-500 ease-out"
     style={{ transform: `translateX(-${activeSlide * 100}%)` }}
   >
-              {/* Slide 1 (matches slide1.jpg layout) */}
-              <div className="w-full shrink-0">
+                      <div className="w-full shrink-0">
                 <div className="grid overflow-hidden bg-white lg:grid-cols-3">
                   {/* Left: video */}
                   <div className="h-[240px] lg:h-[340px]">
@@ -393,7 +389,7 @@ const HeroSection = () => {
                     />
                   </div>
 
-                  {/* Center: text with top orange header */}
+                  
                   <div className="relative h-[240px] lg:h-[340px]">
                     <div className="absolute left-0 top-0 w-full bg-[#ff5a1f] px-8 py-6 text-white">
                       <div className="text-[13px] font-medium">
@@ -418,7 +414,6 @@ const HeroSection = () => {
                 </div>
               </div>
 
-        {/* Slide 2 (matches provided screenshot) */}
         <div className="w-full shrink-0">
           <div className="grid overflow-hidden bg-white lg:grid-cols-3">
             {/* Left: Video */}
@@ -446,7 +441,7 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* Right: THE MISSING IMAGE - Now correctly placed */}
+            
             <div className="h-60 lg:h-85">
               <img src={manImage} alt="Agent" className="h-full w-full object-cover" />
             </div>
@@ -457,7 +452,7 @@ const HeroSection = () => {
   </div>
 </section>
 
-      {/* --- Section 7 (Partners row) --- */}
+      {/*  Section 7 (Partners row) */}
       <section className="bg-[#f3f1ee]">
         <div className="mx-auto max-w-[1280px] px-6 py-16 lg:px-14">
           <div className="text-center text-[12px] tracking-[0.18em] text-black/100">
@@ -474,7 +469,7 @@ const HeroSection = () => {
         </div>
       </section>
 
-      {/* --- Section 8 (Stay informed / video background) --- */}
+      {/* Section 8 (Stay informed / video background)  */}
       <section className="bg-[#f3f1ee]">
         <div className="mx-auto max-w-[1280px] px-6 py-20 lg:px-14">
           <div className="relative -mx-6 lg:-mx-45">
@@ -491,7 +486,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-black/35" />
             </div>
 
-            {/* Content */}
+            
             <div className="relative z-10 grid gap-10 p-10 lg:grid-cols-[1fr_260px] lg:p-14">
               {/* Left: text + simple form */}
               <div className="max-w-[560px] text-white">
@@ -561,7 +556,7 @@ const HeroSection = () => {
       </section>
 
 
-      {/* --- Section 9 (Let’s Move...) --- */}
+      {/*  Section 9 (Let’s Move...)  */}
       <section className="bg-[#f3f1ee]">
         <div className="mx-auto max-w-[1280px] px-6 py-24 lg:px-14">
           <div className="grid gap-12 lg:grid-cols-[520px_80px_1fr] lg:items-start ">
@@ -592,7 +587,7 @@ const HeroSection = () => {
         </div>
       </section>
 
-      {/* --- Section 10 (Orange footer) --- */}
+      {/* Section 10 (Orange footer)  */}
       <footer className="bg-[#ff5a1f]">
         <div className="mx-auto max-w-[1280px] px-6 py-16 lg:px-14">
           <div className="grid gap-14 lg:grid-cols-[420px_1fr]">
